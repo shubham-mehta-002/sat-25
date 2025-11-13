@@ -1,0 +1,80 @@
+.profile {
+    background-color: var(--bgSoft) !important;
+    color: var(--text_color) !important;
+    border-left: 2px solid var(--border);
+    border-right: 2px solid var(--border);
+    min-height: 90vh;
+    padding-bottom: 30px;
+}
+
+.image {
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.myimage {
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    overflow: hidden;
+    object-fit: cover;
+    height: 150px !important;
+    width: 150px !important;
+}
+
+.temp {
+    border-bottom: 2px solid var(--border);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--bg);
+}
+
+.editinfo {
+    border: none;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.editbutton2 {
+    padding: 10px 0px;
+}
+
+.bio{
+    height: 100px;
+    width: 50%;
+    margin: 0px auto;
+    overflow: scroll;
+}
+.bio::-webkit-scrollbar {
+    display: none;
+}
+.icon{
+    margin: 4px 0px;
+}
+.gender{
+    color: lightslategrey;
+}
+
+.post_bar {
+    border-top: 2px solid var(--border);
+    border-bottom: 2px solid var(--border);
+    padding: 15px 0px;
+    width: 100%;
+    background-color: var(--bg);
+}
+
+
+.post-container{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .profile {
+        min-height: 94vh;
+    }   
+    .temp {
+        border-top: 2px solid var(--border);
+    }
+}

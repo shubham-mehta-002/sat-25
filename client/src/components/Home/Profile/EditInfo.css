@@ -1,0 +1,26 @@
+.bio2{
+    background-color: var(--bg);
+    color: var(--text_color) !important;
+}
+
+.bio2:focus{
+    /* outline: none; */
+    background-color: var(--bg);
+    color: var(--text_color) !important;
+}
+
+.invertclass{
+    filter: var(--filter);
+}
+.myimage2{
+    filter: unset !important;
+    border-radius: 50%;
+    height: 150px !important;
+    width: 150px;
+    overflow: hidden !important;
+    object-position: unset !important;
+    object-fit: unset !important;
+}
+.qwerty{
+    padding: 0;
+}

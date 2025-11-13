@@ -1,0 +1,124 @@
+.topbar {
+    height: 10vh;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: var(--body_background) !important;
+    color: var(--body_color) !important;
+}
+
+
+.logo {
+    height: 50px;
+    border-radius: 5px;
+    /* filter: var(--filter); */
+}
+
+.userprofile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.userimage {
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+    border: 2px solid var(--body_color);
+}
+
+.search{
+    border: 1px solid var(--body_color);
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.input{
+    background: none;
+    border: none;
+    color: var(--body_color) !important;
+}
+
+.input:focus{
+    color: var(--body_color) !important;
+    font-weight: bold;
+    background: none;
+    outline: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .topbar {
+        position: fixed;
+        left: -42vw;
+        z-index: 2;
+        flex-direction: column;
+        min-height: 100vh !important;
+        width: 40vw !important;
+        align-items: center;
+        justify-content: flex-start !important;
+        gap: 50px !important;
+        border-right: 2px solid var(--border);
+    }
+
+    .hamburger {
+        display: flex !important;
+        padding-top: 5px !important;
+        width: max-content;
+        position: fixed !important;
+        top: 5px;
+        left: 5px;
+        z-index: 1;
+        background-color: var(--body_color);
+    }
+    .hamburger img{
+        width: 35px;
+        padding: 3px;
+        filter: var(--filter2);
+
+    }
+    .user{
+        flex-direction: column-reverse;
+    }
+
+    .userprofile{
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .logout_button{
+        display: flex;
+        bottom: 0px;
+        padding: 15px 0px;
+        position: absolute;
+        background-color: var(--bg) !important;
+        border-top: 2px solid var(--border);
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu {
+        gap: 15px !important;
+        flex-direction: column;
+        /* height: 100%; */
+    }
+    .exit{
+        transition: all 0.5s linear;
+        transform: translateX(-42vw);
+    }
+    .entry{
+        transition: all 0.5s linear;
+        transform: translateX(0vw);
+    }
+    .input{
+        width: 90% !important;
+    }
+}
