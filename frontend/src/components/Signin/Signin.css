@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+.signin {
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.side{
+    width: 300px;
+}
+
+.form {
+    box-shadow: rgba(87, 86, 86, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: #58585879;
+    width: 30vw;
+}
+
+.form-info {
+    padding-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding-bottom: 15px;
+    background: #00000079;
+    border-radius: 4%;
+}
+
+.para {
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 30px !important;
+    color: #e8e8e8;
+    font-weight: 600;
+    max-width: max-content;
+    white-space: nowrap;
+    animation:
+        typing 3.5s steps(70, end),
+        blink-caret .90s step-end;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .signin {
+        flex-direction: column;
+        padding: 10px 3px;
+        gap: 10px;
+        height: min-content;
+        min-height: 100vh;
+    }
+
+    .form-info {
+        display: none !important;
+    }
+
+    .side {
+        width: 30% !important;
+        object-fit: contain;
+    }
+
+    .para {
+        font-size: large;
+    }
+
+    .form {
+        width: 80vw;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+
+    .side {
+        margin-top: 10px;
+    }
+
+}
+
+input, .loader {
+    width: 100%;
+    border-radius: 5px;
+    background: #0000008e;
+    color: white !important;
+}
+
+input:focus {
+    background: #000000c5;
+    color: white;
+}
+
+button {
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: red;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    width: 100%;
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+    transform: translateY(-0.33em);
+    cursor: pointer;
+}
+
+button:active .button_top {
+    transform: translateY(0);
+}
+
+.Toastify__toast-body {
+    width: 100%;
+}
+
+button>svg {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+button.Toastify__close-button.Toastify__close-button--light {
+    max-width: max-content;
+}

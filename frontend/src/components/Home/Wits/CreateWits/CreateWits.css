@@ -1,0 +1,4 @@
+.tagitem{
+    border: 2px solid var(--border);
+    border-radius: 5px;
+}

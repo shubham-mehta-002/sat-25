@@ -1,0 +1,38 @@
+:root {
+  --body_background: white;
+  --body_color: #000;
+  --bgSoft: #f7f7f7;
+  --bg: #e2e2e2;
+  --textColorSoft: #555;
+  --text_color: black;
+  --border: lightgray;
+  --filter: invert(0);
+  --filter2: invert(1);
+  --heading: #BDBDBD;
+}
+[data-theme="dark"] {
+  --body_background: black;
+  --body_color: whitesmoke;
+  --bg: #141414;
+  --text_color: white;
+  --bgSoft: #1e1e1e;
+  --textColorSoft: lightgray;
+  --border: #444;
+  --filter: invert(1);
+  --filter2: invert(0);
+  --heading: #757575;
+}
+
+*{
+  transition: all 0.05s ease-in-out;
+}
+
+.layout{
+  background-color: var(--body_background);
+}
+
+@media screen and (max-width: 768px) {
+  .layout {
+    padding-top: 6vh;
+  }
+}

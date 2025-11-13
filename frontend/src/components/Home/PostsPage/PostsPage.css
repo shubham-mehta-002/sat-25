@@ -1,0 +1,19 @@
+.container{
+    background-color: var(--bgSoft) !important;
+    color: var(--text_color) !important;
+    border-left: 2px solid var(--border);
+    border-right: 2px solid var(--border);
+    min-height: 90vh;
+    max-height: max-content;
+    padding-top: 30px;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        min-height: 94vh;
+        border-top: 2px solid var(--border);
+    }   
+}
