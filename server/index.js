@@ -3,6 +3,10 @@ import cors from "cors"
 import { connectWithDb } from "./db/db.js"
 import { config } from "dotenv"
 import authRouter from "./routes/auth.route.js";
+import postRouter from "./routes/createPost.route.js"
+import userRouter from "./routes/user.js";
+import witPostRouter from "./routes/witpost.js";
+
 config()
 
 const app = express()
@@ -13,6 +17,9 @@ app.use(cors({
 }))
 
 app.use('/auth' , authRouter);
+app.use('/post' , postRouter);
+app.use('/user' , userRouter);
+app.use('/witPost' , witPostRouter);
 
 app.get('/', (req,res) => {
     res.status(200).json({

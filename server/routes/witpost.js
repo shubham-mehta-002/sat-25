@@ -289,4 +289,4 @@ router.post("/api/getmostcommentedposts", requireLogin, (req, res) => {
         })
 })
 
-export default  router; 
+export default router
