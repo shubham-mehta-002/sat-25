@@ -1,0 +1,7 @@
+.menu_item{
+    background-color: var(--bgSoft);
+    color: var(--text_color);
+}
+.main-nav{
+    border-bottom: 2px solid var(--border);
+}

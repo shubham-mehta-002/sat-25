@@ -1,0 +1,88 @@
+.createpost {
+    background-color: var(--bgSoft) !important;
+    color: var(--text_color) !important;
+    border-left: 2px solid var(--border);
+    border-right: 2px solid var(--border);
+    min-height: 90vh;
+    max-height: max-content;
+}
+
+.preview{
+    filter: unset !important;
+}
+
+.temp {
+    border-bottom: 2px solid var(--border);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--bg);
+}
+
+.main-div {
+    width: 90%;
+    margin: 0px auto;
+}
+
+#output {
+    max-height: 300px;
+    object-fit: contain;
+    padding: 5px 0px;
+    filter: var(--filter);
+}
+
+.text {
+    background-color: inherit;
+    color: inherit;
+    border: 2px solid var(--border);
+    height: 90px;
+    padding: 10px;
+    word-wrap: break-word;
+    width: 100%;
+    resize: none;
+}
+
+
+.postbutton {
+    margin: 0px auto;
+    margin-top: 7px;
+    border: 2px solid var(--border);
+    padding: 5px;
+    width: 25%;
+    background: var(--body_background);
+    color: var(--text_color);
+}
+
+input[type=file] {
+    background: rgb(113, 110, 110);
+    border: 2px solid var(--border);
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: var(--body_background);
+    padding: 10px 20px;
+    color: var(--text_color);
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: var(--bg);
+    font-weight: bold;
+}
+
+.postbutton:hover {
+    background: var(--bg);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .createpost {
+        min-height: 94vh;
+    }
+
+    .temp {
+        border-top: 2px solid var(--border);
+    }
+}
