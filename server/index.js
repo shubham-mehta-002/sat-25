@@ -2,6 +2,7 @@ import express from "express"
 import cors from "cors"
 import { connectWithDb } from "./db/db.js"
 import { config } from "dotenv"
+import authRouter from "./routes/auth.route.js";
 config()
 
 const app = express()
@@ -10,6 +11,8 @@ const app = express()
 app.use(cors({
     origin: ['http://localhost:5173']
 }))
+
+app.use('/auth' , authRouter);
 
 app.get('/', (req,res) => {
     res.status(200).json({
